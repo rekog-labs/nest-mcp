@@ -4,7 +4,7 @@ import { DiscoveryService, MetadataScanner } from "@nestjs/core";
 import { MCP_TOOL_METADATA_KEY, ToolMetadata } from "../decorators";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { CallToolRequestSchema, ErrorCode, ListToolsRequestSchema, McpError, Progress } from "@modelcontextprotocol/sdk/types";
+import { CallToolRequestSchema, ErrorCode, ListToolsRequestSchema, McpError, Progress } from "@modelcontextprotocol/sdk/types.js";
 
 export type Context = {
   reportProgress: (progress: Progress) => Promise<void>;
